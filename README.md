@@ -185,7 +185,7 @@ Our pipeline extracts the following retinal biomarkers:
 | Method | Task 1 | Task 2 | Task 3 | Overall Score |
 |--------|--------:|--------:|--------:|--------------:|
 | Official Baseline | 6.2039 | 6.2104 | 6.1672 | 6.1918 |
-| **PixelPulse (Islamic University)** | **8.0785** | **8.0845** | **7.4045** | **7.8113** |
+| **PixelPulse** | **8.0785** | **8.0845** | **7.4045** | **7.8113** |
 
 ---
 
@@ -193,7 +193,7 @@ Our pipeline extracts the following retinal biomarkers:
 
 | Rank | Team | Organization | Overall Score |
 |-----:|------|--------------|--------------:|
-| **11** | **PixelPulse** | Islamic University | **7.8113** |
+| **11** | **PixelPulse** | Islamic University, Bangladesh | **7.8113** |
 
 **Submission Time:** `2026-07-26 14:36`
 
