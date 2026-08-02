@@ -120,41 +120,41 @@ Our pipeline extracts the following retinal biomarkers:
 
 ## Task 1 — Color Fundus Artery & Vein Segmentation
 
-| Metric | Official Baseline | Ours (PixelPulse) |
-|---------|------------------:|------------------:|
-| AV Dice (DSC) | **0.7656** | 0.6264 |
-| Artery Sensitivity | 0.6709 | **0.9478** |
-| Vein Sensitivity | 0.7146 | **0.9614** |
-| Artery Specificity | **0.9937** | 0.9612 |
-| Vein Specificity | **0.9930** | 0.9589 |
-| Artery Accuracy | **0.9828** | 0.9608 |
-| Vein Accuracy | **0.9808** | 0.9590 |
-| Artery INF | 0.6924 | **0.2540** |
-| Vein INF | 0.7672 | **0.2380** |
-| Artery COR | 0.3058 | **0.7372** |
-| Vein COR | 0.2322 | **0.7472** |
-| **Challenge Score** | 6.2039 | **8.0785** |
+| Metric | Baseline | Ours (PixelPulse) | Improvement |
+|---------|----------|------------------|-------------|
+| AV Dice | **0.7656** | **0.6264** | -0.1392 |
+| Artery Sensitivity | 0.6709 | **0.9478** | **+0.2769** |
+| Vein Sensitivity | 0.7146 | **0.9614** | **+0.2468** |
+| Artery Specificity | **0.9937** | 0.9612 | -0.0325 |
+| Vein Specificity | **0.9930** | 0.9589 | -0.0341 |
+| Artery Accuracy | **0.9828** | 0.9608 | -0.0220 |
+| Vein Accuracy | **0.9808** | 0.9590 | -0.0218 |
+| Artery INF | **0.6924** | 0.2540 | -0.4384 |
+| Vein INF | **0.7672** | 0.2380 | -0.5292 |
+| Artery COR | 0.3058 | **0.7372** | **+0.4314** |
+| Vein COR | 0.2322 | **0.7472** | **+0.5150** |
+| **Challenge Score** | 6.2039 | **8.0785** | **+1.8746** |
 
 > **Note:** Higher **COR** values and lower **INF** values indicate better performance. Since **COR + INF = 1.00**, improvements in COR correspond to reductions in INF.
 
 ---
 
-## Task 2 — Cross-Modal Artery & Vein Segmentation
+## Task 2 — Cross-Modal AV Segmentation
 
-| Metric | Official Baseline | Ours (PixelPulse) |
-|---------|------------------:|------------------:|
-| AV Dice (DSC) | **0.7621** | 0.6753 |
-| Artery Sensitivity | 0.6892 | **0.9332** |
-| Vein Sensitivity | 0.7025 | **0.9480** |
-| Artery Specificity | **0.9921** | 0.9671 |
-| Vein Specificity | **0.9924** | 0.9659 |
-| Artery Accuracy | **0.9819** | 0.9659 |
-| Vein Accuracy | **0.9797** | 0.9651 |
-| Artery INF | 0.6672 | **0.2846** |
-| Vein INF | 0.7852 | **0.2574** |
-| Artery COR | 0.3302 | **0.7078** |
-| Vein COR | 0.2132 | **0.7348** |
-| **Challenge Score** | 6.2104 | **8.0845** |
+| Metric | Baseline | Ours (PixelPulse) | Improvement |
+|---------|----------|------------------|-------------|
+| AV Dice | **0.7621** | 0.6753 | -0.0868 |
+| Artery Sensitivity | 0.6892 | **0.9332** | **+0.2440** |
+| Vein Sensitivity | 0.7025 | **0.9480** | **+0.2455** |
+| Artery Specificity | **0.9921** | 0.9671 | -0.0250 |
+| Vein Specificity | **0.9924** | 0.9659 | -0.0265 |
+| Artery Accuracy | **0.9819** | 0.9659 | -0.0160 |
+| Vein Accuracy | **0.9797** | 0.9651 | -0.0146 |
+| Artery INF | **0.6672** | 0.2846 | -0.3826 |
+| Vein INF | **0.7852** | 0.2574 | -0.5278 |
+| Artery COR | 0.3302 | **0.7078** | **+0.3776** |
+| Vein COR | 0.2132 | **0.7348** | **+0.5216** |
+| **Challenge Score** | 6.2104 | **8.0845** | **+1.8741** |
 
 > **Note:** Higher **COR** values and lower **INF** values indicate better performance. Since **COR + INF = 1.00**, improvements in COR correspond to reductions in INF.
 
