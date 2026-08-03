@@ -199,6 +199,66 @@ Our pipeline extracts the following retinal biomarkers:
 
 ---
 
+# Dataset Structure
+
+Before training the models, organize the dataset in the following directory structure. The dataset should be stored in your **Google Drive**.
+
+```text
+GAVE2_preliminary/
+├── training/
+│   ├── images/
+│   │   ├── g_001.png
+│   │   ├── g_002.png
+│   │   ├── ...
+│   │   └── g_050.png
+│   ├── FFA_A/
+│   │   ├── g_001.png
+│   │   ├── ...
+│   │   └── g_050.png
+│   ├── FFA_AV/
+│   │   ├── g_001.png
+│   │   ├── ...
+│   │   └── g_050.png
+│   ├── av/
+│   │   ├── g_001.png
+│   │   ├── ...
+│   │   └── g_050.png
+│   └── masks/
+│       ├── g_001.png
+│       ├── ...
+│       └── g_050.png
+└── validation/
+    ├── images/
+    │   ├── g_051.png
+    │   ├── ...
+    │   └── g_100.png
+    ├── FFA_A/
+    │   ├── g_051.png
+    │   ├── ...
+    │   └── g_100.png
+    ├── FFA_AV/
+    │   ├── g_051.png
+    │   │── ...
+    │   └── g_100.png
+    └── masks/
+        ├── g_051.png
+        ├── ...
+        └── g_100.png
+```
+
+### Folder Description
+
+| Folder | Description |
+|---------|-------------|
+| `images/` | Color Fundus Photography (CFP) images |
+| `FFA_A/` | Arterial-phase fluorescein angiography images |
+| `FFA_AV/` | Arteriovenous-phase fluorescein angiography images |
+| `av/` | Artery-vein segmentation labels (Task 1) |
+| `masks/` | Vessel segmentation masks |
+
+> **Note:** Make sure the dataset is stored in your **Google Drive** while running the training notebooks in Google Colab.
+---
+
 # Repository Structure
 
 ```text
