@@ -1,0 +1,42 @@
+{
+  "amp": true,
+  "batch_size": 4,
+  "case_count": 50,
+  "checkpoint": "/media/iot/HDD2TB/faisal/gave2/artifacts/task1_hrvrl/finetune_precision_teacher/fold_4/best.pt",
+  "checkpoint_epoch": 21,
+  "checkpoint_sha256": "58993995decdf6b840bbf36aafa422766308d09ed4646423e06cebfcbfe9587b",
+  "checkpoint_validation": {
+    "artery_dice": 0.7542632581417018,
+    "artery_sensitivity": 0.7576564103253443,
+    "artery_specificity": 0.990963713495881,
+    "case_count": 10.0,
+    "mean_av_dice": 0.7810329545787058,
+    "selection_score": 0.7793651708412975,
+    "vein_dice": 0.8078026510157099,
+    "vein_sensitivity": 0.8097860894069425,
+    "vein_specificity": 0.9908232040317433,
+    "vessel_dice": 0.7966840927663209
+  },
+  "elapsed_seconds": 65.18460255400169,
+  "fold": 4,
+  "model": {
+    "checkpoint": "/media/iot/HDD2TB/faisal/gave2/external/HRVRL/weights/G_pretrain.pkl",
+    "checkpoint_coverage": 1.0,
+    "checkpoint_keys": 383,
+    "compatible_keys": 383,
+    "missing_keys": [],
+    "parameter_count": 28923950,
+    "unexpected_keys": [],
+    "use_centerness": true,
+    "use_global_semantic": true
+  },
+  "patch_size": 512,
+  "peak_vram_mib": 681.80517578125,
+  "pretrained_checkpoint": "/media/iot/HDD2TB/faisal/gave2/external/HRVRL/weights/G_pretrain.pkl",
+  "pretrained_checkpoint_sha256": "115eea6d33471910610a13685ae029094d1da4e497071c5aad95a49a05acf7e6",
+  "resume_skipped": 0,
+  "status": "passed",
+  "stride": 150,
+  "task1_ffa_used": false,
+  "written_this_run": 50
+}

@@ -1,0 +1,19 @@
+name: pixelpulse-task1
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.3.0
+  - torchvision=0.18.0
+  - pytorch-cuda=11.8
+  - numpy=1.26.4
+  - pillow=10.3
+  - scipy=1.13.1
+  - scikit-image=0.23.2
+  - opencv=4.6
+  - pip
+  - pip:
+      - einops==0.7.0

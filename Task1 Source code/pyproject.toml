@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gave2"
+version = "0.1.0"
+description = "Reproducible, leakage-safe GAVE2 competition pipeline"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "numpy>=1.26,<2",
+  "Pillow>=10,<11",
+  "PyYAML>=6,<7",
+  "scipy>=1.13,<1.14",
+  "scikit-image>=0.23,<0.24",
+  "scikit-learn>=1.4,<1.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

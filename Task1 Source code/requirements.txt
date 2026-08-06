@@ -1,0 +1,7 @@
+# Install the matching CUDA-enabled torch 2.3.0 and torchvision 0.18.0 first.
+numpy==1.26.4
+Pillow==10.3.0
+scipy==1.13.1
+scikit-image==0.23.2
+einops==0.7.0
+opencv-python==4.6.0.66
